@@ -20,7 +20,7 @@ function draw(min,max){
         }
 
     //8或66或88存在编号里
-    else if((foo.indexOf(66)===-1)&&(foo.indexOf(8)!=-1)){//8
+    else if((foo.indexOf(66)===-1)&&(foo.indexOf(8)!==-1)){//8
         arr.push(8);
         for(var k=0;k<2;k++){
             if([4,44,74].indexOf(m)===-1){
@@ -31,7 +31,7 @@ function draw(min,max){
            }
         }
     }
-    else if((foo.indexOf(66)!=-1)&&(foo.indexOf(8)!=-1)&&(foo.indexOf(88)===-1)){//8,66
+    else if((foo.indexOf(66)!==-1)&&(foo.indexOf(8)!==-1)&&(foo.indexOf(88)===-1)){//8,66
         arr.push(8);
         arr.push(66);
         if([4,44,74].indexOf(m)===-1){
@@ -41,13 +41,24 @@ function draw(min,max){
             draw();
         }
     }
-    else if((foo.indexOf(8)!=-1)&&(foo.indexOf(66)!=-1)&&(foo.indexOf(88)!=-1)){//8,66,88
+    else if((foo.indexOf(8)!==-1)&&(foo.indexOf(66)!==-1)&&(foo.indexOf(88)!==-1)){//8,66,88
     	arr.push(8);
     	arr.push(66);
         arr.push(88);
     }
+    else if((foo.indexOf(8)===-1)&&(foo.indexOf(66)!==-1)&&(foo.indexOf(88)===-1)){//66
+        arr.push(66);
+        for(var k=0;k<2;k++){
+            if([4,44,74].indexOf(m)===-1){
+                arr.push(m);
+            }
+            else {
+               draw();
+           }
+       }
+   }
 
-    else if((foo.indexOf(8)===-1)&&(foo.indexOf(66)!=-1)&&(foo.indexOf(88)!=-1)){//66,88
+    else if((foo.indexOf(8)===-1)&&(foo.indexOf(66)!==-1)&&(foo.indexOf(88)!==-1)){//66,88
         arr.push(66);
         arr.push(88);
         for(var k=0;k<1;k++){
@@ -59,7 +70,7 @@ function draw(min,max){
            }
        }
    }
-    else if((foo.indexOf(8)===-1)&&(foo.indexOf(66)===-1)&&(foo.indexOf(88)!=-1)){//88
+    else if((foo.indexOf(8)===-1)&&(foo.indexOf(66)===-1)&&(foo.indexOf(88)!==-1)){//88
         arr.push(88);
         for(var k=0;k<2;k++){
             if([4,44,74].indexOf(m)===-1){
@@ -93,6 +104,6 @@ function draw(min,max){
             }
         //若存在8,66,88，则推向数组
         */
-        return arr[0];
     }
 console.log(draw(8,67));//输出数组中奖结果
+console.log(arr[0]);
