@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>无线电爱好者协会-华南理工大学学术型社团</title>
+    <meta name="keywords" content="无线电爱好者协会，大学生技术交流平台，硬件开发教程，软件开发教程，华南理工大学学生社团">
+    <meta name="description" content="无线电爱好者协会，学术交流性社团。华南理工大学规模最大，历史最久远的学生社团组织，致力于电子设计、软件开发方面学术实践。
+    为喜欢技术的人提供一个分享学习心得、探讨学术见解的平台">
+    <link rel="icon" href="./index.jpg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="radioFans.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo-charactor">
+            <span class="title">
+                <strong>无线电爱好者协会</strong>
+            </span>
+            <br>
+            <span class="radio">
+                <strong>Radio Fans</strong>
+            </span>
+            <span class="association">
+                <strong>Association</strong>
+            </span>
+        </div>
+            <div class="nav-menu">
+                <span class="nav-home" onmouseover="hide()" ><a href="">首页</a></span>
+                <span id="nav-content" class="showhide" onmouseover="displaycontent()"><a href="">协会概况</a></span>
+                <span id="nav-news" class="showhide" onmouseover="displaynews()"><a href="">协会动态</a></span>
+             </div>
+    </div>
+            <div class="nav2" onmouseout="hide()" >
+                <div class="content-second" onmouseover="displaycontent()" onmouseout="hide()">
+                    <span class="menu2" ><a href="">关于无协</a></span>
+                    <span class="menu2"><a href="">现任理事</a></span>
+                    <span class="menu2"><a href="">部门介绍</a></span>
+                    <span class="menu2"><a href="">技术小组</a></span>
+                </div>
+                <div class="news-second" onmouseover="displaynews()" onmouseout="hide()">
+                    <span class="menu2" onclick="displaycontainer(),changeRecent(),displayrecent()"><a href="">近期活动</a></span>
+                    <span class="menu2" onclick="displaycontainer(),changeReport(),displayreport()"><a href="">活动报道</a></span>
+                    <span class="menu2" onclick="displaycontainer(),changeCollection(),displaycollection()"><a href="">作品锦集</a></span>
+                </div>
+            </div>
+    <div class="white-container">
+        <div class="sidebar">
+            <div class="side-item">
+                <a id="recent" class="hideshow1" onclick="displaycontainer(),changeRecent(),displayrecent()" href="/activity#recent">近期活动</a>
+            </div>
+            <div class="side-item">
+                <a id="report" class="hideshow2" onclick="displaycontainer(),changeReport(),displayreport()" href="/activity#report">活动报道</a>
+            </div>
+            <div class="side-item">
+                <a id="collection"  class="hideshow3" onclick="displaycontainer(),changeCollection(),displaycollection()" href="/activity#collection">作品锦集</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="recent-activity">
+                <h1>专辑签售</h1>
+                <h2>活动简介</h2>
+                <p>北湖巴拉巴拉巴拉</p>
+            </div>
+            <a class="activity-report" onclick="open()">
+                <p>报道报道报道</p>
+            </a>
+            </div>
+            <div class="works-collection">
+                <p>作品作品作品作品</p>
+            </div>
+        </div>
+    </div>
+
+  <script src="radioFans.js"></script>
+</body>
+</html>
