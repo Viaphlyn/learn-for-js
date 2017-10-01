@@ -69,7 +69,8 @@ body{
     height: 50px;
     width:100%;
     display: none;
-
+    float: left;
+    border-bottom: 1px solid  #eee;
 }
 .content-second{
     color: #cccccc;
@@ -97,12 +98,12 @@ body{
    border-bottom: 2px solid #03A9F4;
 }
 .white-container{
-    /*display: none;*/
+    display: none;
     background-color: #ffffff;
     border-radius: 5px;
     min-height: 70%;
-    position: fixed;
-    margin-top: 50px;
+    position: absolute;
+    top: 119px;
     margin-left:80px;
     width: 1208px;
     height: 1208px;
@@ -183,29 +184,14 @@ body{
     padding: 5px;
     border:2px solid #eeeeee;
     position: absolute;
-    height: 150px;
+    float: left;
     width: 900px;
     padding: 30px;
     margin-left:30px;
     display: none;
 }
-/*.arrows{
-    border:#666 solid;
-    border-width:2px 2px 0 0;
-    width:15px;
-    height:15px;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    position: absolute;
-}*/
-/*.activity-reportq::before{
-    content: ">";
-    position: absolute;
-    left: 920px;
-    top: 50px;
-    font-size: 57px;
-    color: #cccccc;
-}*/
+
 .works-collection{
     display: none;
+    float: left;
 }
